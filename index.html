@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="src/style.css">
-  
+  <script src="src/script/script.js"></script>
   <title>Frontend Mentor | QR code component</title>
 
 </head>
 <body>
   
   <div class="card__container">
-    <img src="images/image-qr-code.png" alt="QRCode">
+    <div class="img__container">
+      <img src="/images/image-qr-code.png" alt="QRCode" onmouseover="expandImageText('visible')" onmouseout="expandImageText('hidden')" onclick="expandImage()">
+      <span id="expand_image">Click to Expand</span>
+    </div>
+    
     <div class="card__text">
       <h2>Improve your front-end skills by building projects</h2>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
