@@ -6,28 +6,37 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <script src="./src/script/script.js"></script>
   <title>Frontend Mentor | QR code component</title>
 
 </head>
 <body>
-  
   <div class="card__container">
     <div class="img__container">
-      <img src="images/image-qr-code.png" alt="QRCode" onmouseover="expandImageText('visible')" onmouseout="expandImageText('hidden')" onclick="expandImage()">
-      <span id="expand_image">Click to Expand</span>
+      <img id="QRCode" src="images/image-qr-code.png" alt="QRCode" onclick="expandImage()"> 
+      <div class="extend__container"onmouseover="expandImageText()" onmouseout="undoExpandImageText()" onclick="openPopUp()">
+        <span id = "expand_image"><strong>Click to Expand</strong></span>
+      </div>
     </div>
+    
     
     <div class="card__text">
       <h2>Improve your front-end skills by building projects</h2>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div> 
   </div>
-
   <br><br>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Xoris650" target="_blank">Gabriel Evaristo</a>.
+  </div>
+
+  <div id="popup">
+    <div class="closeBtn__container" onclick="closePopUp()">
+      <span class="material-symbols-outlined" style="font-size: 30px;" >close</span>
+    </div>
+    
   </div>
 </body>
 </html>
