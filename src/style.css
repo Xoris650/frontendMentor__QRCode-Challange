@@ -83,15 +83,18 @@ body{
     top: 400px;
     left: 36vw;
     justify-content: space-between;
-    animation-fill-mode: forwards;
+}
+.closeBtn__container{
+    z-index: 1;
+}
+#popup > img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
 }
 
-.popup > i{
-    margin-top: 10px;
-    margin-right: 10px;
-}
 
-@keyframes popupAnimation{
+@keyframes popupOpenAnimation{
     100%{
         top: 0;
     }

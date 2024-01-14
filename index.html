@@ -12,31 +12,33 @@
 
 </head>
 <body>
-  <div class="card__container">
-    <div class="img__container">
-      <img id="QRCode" src="images/image-qr-code.png" alt="QRCode" onclick="expandImage()"> 
-      <div class="extend__container"onmouseover="expandImageText()" onmouseout="undoExpandImageText()" onclick="openPopUp()">
-        <span id = "expand_image"><strong>Click to Expand</strong></span>
+  <div id="teste">
+    <div class="card__container">
+      <div class="img__container">
+        <img id="QRCode" src="images/image-qr-code.png" alt="QRCode" onclick="expandImage()"> 
+        <div class="extend__container"onmouseover="expandImageText()" onmouseout="undoExpandImageText()" onclick="openPopUp()">
+          <span id = "expand_image"><strong>Click to Expand</strong></span>
+        </div>
       </div>
+      
+      
+      <div class="card__text">
+        <h2>Improve your front-end skills by building projects</h2>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div> 
     </div>
-    
-    
-    <div class="card__text">
-      <h2>Improve your front-end skills by building projects</h2>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div> 
+    <br><br>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Xoris650" target="_blank">Gabriel Evaristo</a>.
+    </div>
   </div>
-  <br><br>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/Xoris650" target="_blank">Gabriel Evaristo</a>.
-  </div>
-
+  
   <div id="popup">
     <div class="closeBtn__container" onclick="closePopUp()">
       <span class="material-symbols-outlined" style="font-size: 30px;" >close</span>
     </div>
-    
+    <img src="./images/image-qr-code.png" alt="">
   </div>
 </body>
 </html>

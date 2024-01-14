@@ -10,10 +10,12 @@ function undoExpandImageText(){
 
 function openPopUp(){
     var popup = document.getElementById("popup")
+    document.getElementById("teste").style.filter = "blur(10px)"
     popup.style.display = "flex"
-    popup.style.animation = ".7s ease 0s 1 normal forwards running popupAnimation"
+    popup.style.animation = ".5s ease 0s 1 normal forwards running popupOpenAnimation"
 
 }
 function closePopUp(){
     document.getElementById("popup").style.display = "none"
+    document.getElementById("teste").style.filter = "blur(0px)"
 }
